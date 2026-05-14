@@ -4,7 +4,8 @@ stitch_krithishree_professional_psychiatry_site/
 Dr. Krithishree S.S. - Consultant Psychiatrist.html
 Dr. Krithishree S.S. - Consultant Psychiatrist_files/
 
-# OS / editor noise
+# OS / editor / tooling noise
 .DS_Store
 Thumbs.db
 desktop.ini
+.claude/
