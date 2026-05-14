@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. Krithishree | Psychiatry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#000000",
+                        "background": "#f9f9f9",
+                        "secondary": "#1c648e",
+                        "tertiary-fixed": "#dfe3e7",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "secondary-container": "#90cdfd",
+                        "tertiary": "#000000",
+                        "tertiary-fixed-dim": "#c3c7cb",
+                        "secondary-fixed": "#cae6ff",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-surface": "#2f3131",
+                        "on-surface-variant": "#44474d",
+                        "on-background": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#004b70",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed-variant": "#43474b",
+                        "surface-tint": "#515f78",
+                        "inverse-primary": "#b9c7e4",
+                        "tertiary-container": "#171c1f",
+                        "on-tertiary-container": "#808488",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary-fixed": "#0d1c32",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-fixed": "#171c1f",
+                        "surface-container-low": "#f3f3f4",
+                        "on-secondary-container": "#025881",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed-dim": "#90cdfd",
+                        "on-secondary-fixed": "#001e30",
+                        "on-primary-container": "#76849f",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "outline-variant": "#c5c6cd",
+                        "primary-container": "#0d1c32",
+                        "outline": "#75777e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "section-padding": "80px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": [
+                            "Playfair Display"
+                        ],
+                        "label-md": [
+                            "Inter"
+                        ],
+                        "headline-lg-mobile": [
+                            "Playfair Display"
+                        ],
+                        "body-md": [
+                            "Inter"
+                        ],
+                        "headline-lg": [
+                            "Playfair Display"
+                        ],
+                        "display-lg": [
+                            "Playfair Display"
+                        ],
+                        "body-lg": [
+                            "Inter"
+                        ]
+                    },
+                    "fontSize": {
+                        "headline-md": [
+                            "24px",
+                            {
+                                "lineHeight": "1.4",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "label-md": [
+                            "14px",
+                            {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "headline-lg-mobile": [
+                            "28px",
+                            {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "body-md": [
+                            "16px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ],
+                        "headline-lg": [
+                            "32px",
+                            {
+                                "lineHeight": "1.3",
+                                "fontWeight": "600"
+                            }
+                        ],
+                        "display-lg": [
+                            "48px",
+                            {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                            }
+                        ],
+                        "body-lg": [
+                            "18px",
+                            {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                            }
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest dark:bg-surface-dim shadow-sm dark:shadow-none shadow-[0_4px_20px_rgba(10,25,47,0.05)] sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center w-full max-w-[1200px] mx-auto px-margin-desktop py-4 md:px-margin-desktop px-margin-mobile">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed">Dr. Krithishree</div>
+<nav class="hidden md:flex gap-gutter items-center font-body-md text-body-md">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-secondary pb-1 opacity-80 scale-95 transition-transform hover:text-secondary dark:hover:text-secondary-container transition-all duration-300" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-container transition-all duration-300" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-container transition-all duration-300" href="#services">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-container transition-all duration-300" href="#resources">Resources</a>
+</nav>
+<button class="bg-primary-container text-on-primary py-2 px-6 rounded-lg font-label-md text-label-md hover:bg-surface-tint transition-colors">Book Appointment</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex items-center justify-center bg-cover bg-center bg-no-repeat" data-alt="A serene, wide landscape of soft ocean waves gently lapping onto a calm sandy beach at dawn. The light is diffused, cool-toned, and peaceful, aligning with a modern clinical aesthetic of serene blues and soft whites. The atmosphere is deeply calming, spacious, and promotes a sense of mental clarity and tranquility." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX1DeZyUN8bjF7gmq0Z4R1hj2-tlRJ6qL7L6cKhiMatKFvhY4JmRmnxnBSIvhL6ZlVufq8C2j683uBz2kAW61X_7hY2geltt5GsAXJtOkmsNirIfwdOW3DlqYXXJFedOGB5bFsZr4Wblij14poJinS3iYn-mokR9W760qcaWGeilOrKcsuiHvNZug6I4zjh2J_AMpAe1Hg-5Lou4LBRQ68zuzegcQxUBh73SRoIv3XpnQowKRx2MH124-i65xWiW7YKDvNBXfl8Knf');">
+<div class="absolute inset-0 bg-surface-container-lowest/70 backdrop-blur-sm"></div>
+<div class="relative z-10 text-center max-w-[800px] px-margin-mobile md:px-0">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-headline-lg-mobile text-primary mb-6">Compassionate Care for Your Mental Well-being</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-[600px] mx-auto">Providing a secure, empathetic, and professional environment to help you navigate life's challenges with clarity and strength.</p>
+<button class="bg-primary-container text-on-primary py-4 px-8 rounded-lg font-label-md text-label-md hover:bg-surface-tint transition-colors shadow-[0_4px_20px_rgba(10,25,47,0.05)] hover:shadow-[0_8px_30px_rgba(10,25,47,0.1)]">Book Appointment</button>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-padding bg-surface-bright" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-padding items-center">
+<div class="relative">
+<div class="absolute inset-0 bg-secondary-fixed opacity-50 rounded-xl transform translate-x-4 translate-y-4"></div>
+<img alt="Professional portrait" class="relative z-10 w-full h-[500px] object-cover rounded-xl shadow-[0_4px_20px_rgba(10,25,47,0.05)] grayscale-[20%]" data-alt="A professional, warm portrait of a female psychiatrist in a bright, modern, minimalist office. She wears professional clinical attire. The lighting is soft and natural, casting gentle shadows. The background features subtle elements of serene sky blue and white, conveying empathetic authority and clinical excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiZIsUN1FZVTzphfuUt2rg2NZMXYPEc1ta4ZcVNxSF8QMohp1JfEVLhI2X1qqhRUCJuhbVTBGfknc0ZAJTl_cGXTuCVTonbiExCOqZSLdJ5MbzOsW8PHYh_OGxZ55Lg5LTx8AO0kdC10YfkcOS5xA7pAAgsqMcQWOdCZghGhOs1epBiKDWoiwe1H8bAzXM1OvdCVngW34Up0R9_BcLYoVRQPXNIf__zM9BOpm2IFhBMdaXxLIWA3dvcZTNs7KQiILiDu7b2eyH3MpH"/>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">About Dr. Krithishree</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">With a profound commitment to mental wellness, Dr. Krithishree combines rigorous clinical expertise with genuine empathy. She believes in a holistic approach, tailoring every treatment plan to the individual's unique needs and life circumstances.</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Her practice focuses on creating a safe, non-judgmental space where patients feel truly heard and supported through their journey toward mental resilience.</p>
+<div class="flex gap-4">
+<span class="inline-flex items-center px-4 py-2 rounded-full bg-secondary-fixed text-primary-container font-label-md text-label-md">MD Psychiatry</span>
+<span class="inline-flex items-center px-4 py-2 rounded-full bg-secondary-fixed text-primary-container font-label-md text-label-md">10+ Years Experience</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialties Section -->
+<section class="py-section-padding bg-surface-container-lowest" id="services">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Areas of Specialty</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[600px] mx-auto">Comprehensive mental health services tailored to support your specific needs in a serene environment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-6 shadow-[0_4px_20px_rgba(10,25,47,0.05)] hover:shadow-[0_8px_30px_rgba(10,25,47,0.08)] transition-all duration-300">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Anxiety Treatment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Evidence-based approaches to understand and manage anxiety, panic attacks, and chronic stress, restoring your peace of mind.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-6 shadow-[0_4px_20px_rgba(10,25,47,0.05)] hover:shadow-[0_8px_30px_rgba(10,25,47,0.08)] transition-all duration-300 transform md:-translate-y-4">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Depression Management</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Compassionate care utilizing modern therapeutic techniques and medication management to help lift the weight of depression.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-surface-variant rounded-xl p-6 shadow-[0_4px_20px_rgba(10,25,47,0.05)] hover:shadow-[0_8px_30px_rgba(10,25,47,0.08)] transition-all duration-300">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">work_history</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Therapy for Professionals</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized support for high-performing individuals dealing with burnout, career transitions, and work-life balance.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Section -->
+<section class="py-section-padding bg-surface-bright">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-padding items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Why Choose Dr. Krithishree</h2>
+<div class="space-y-8">
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-2 text-lg">Professional Expertise</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Board-certified psychiatry ensuring the highest standard of evidence-based clinical care.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-2 text-lg">Confidential Environment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">A completely secure and private setting, physically and digitally, for your peace of mind.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined">handshake</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-2 text-lg">Personalized Treatment Plans</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Care strategies specifically tailored to your individual history, lifestyle, and mental health goals.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden lg:block relative h-[600px] rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(10,25,47,0.05)]">
+<img alt="Serene consulting room" class="w-full h-full object-cover" data-alt="A tranquil, minimalist clinical consulting room bathed in soft, diffused natural light. The room features a comfortable modern armchair, gentle white sheer curtains, and subtle touches of sky blue decor. The atmosphere conveys deep calm, professional safety, and empathetic serenity, matching a high-end psychiatric practice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZsqHrDY-38G638KSXCz0Ro_W4D3NOJDRrYBfO--hVM0LfRgJh5VcQwb6Ml3w2KLxaYgyW1ly_gBlfFMrmjTF1IoRZwSrt0yiMOYSwq7LEWdH3v4JHUrRRJ6lILvKpBVd7_eVGijO1derBSGm6l5H1O828HkVe8p3j8cizojggN9ezQXy0BWh5lfpjFFwjw_R2nuNsY_WrZRYFZ3OZ8BiTMRmgJzNZAYn5NANbbpkmrcIVxeoTaLW7PUxmpBQ4FqVIRGcD1hByeDMB"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-high w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-start w-full max-w-[1200px] mx-auto px-margin-desktop py-section-padding gap-gutter">
+<div>
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4">Dr. Krithishree</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 max-w-[300px]">Empathetic psychiatric care dedicated to your mental wellness and clarity.</p>
+<div class="font-body-md text-body-md text-on-surface-variant">© 2024 Dr. Krithishree Psychiatry. All rights reserved.</div>
+</div>
+<nav class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container" href="#">Credentials</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-container dark:hover:text-secondary-fixed transition-colors duration-200 focus:ring-2 focus:ring-secondary-container" href="#">Terms of Service</a>
+</nav>
+</div>
+</footer>
+</body></html>
