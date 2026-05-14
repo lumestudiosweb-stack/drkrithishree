@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.happiesthealth.com)",
+      "WebFetch(domain:www.onlymyhealth.com)",
+      "WebFetch(domain:www.manipalhospitals.com)",
+      "WebFetch(domain:www.deccanherald.com)",
+      "WebFetch(domain:thehealthsite.com)",
+      "WebFetch(domain:onlymyhealth.com)"
+    ]
+  }
+}
